@@ -1,25 +1,88 @@
 <html>
-
+<br>
     <head>
         <title>About Me</title>
     </head>
 
     <body style="background-color: rgb(187, 145, 216);color: rgb(95, 29, 157);">
         
-<style> 
-  .container {
-    display: flex; 
-    width: 70%
+<div class="tab">
+    <button class="tablink" onclick="openInfo(event, 'About Me!')">About Me!</button>
+    <button class="tablink" onclick="openInfo(event, 'My Car!')">My Car!</button>
+    <button class="tablink" onclick="openInfo(event, 'My Girlfriend!')">My Girlfriend!</button>
+</div>
+
+    <div id="About Me!" class="tabcontent">
+    <h3>About Me!</h3>
+    <p>My name is Daimon Carey, and I'm 18 years old!</p>
+    <p>THere's not too much to me, the most important things to me are my car, my family, and my girlfriend</p>
+    </div>
+
+    <div id="My Car!" class="tabcontent">
+    <h3>My Car!</h3>
+    <p>This is my car! It's a 2003 Acura RSX Type-S</p>
+    <p>Its kinda boring to most, however its cool to a niche group</p>
+    </div>
+
+    <div id="My Girlfriend!" class="tabcontent">
+    <h3>My Girlfriend!</h3>
+    <p>This is my Girlfriend!</p>
+    <p>There isn't much I couldn't say about her, she's amazing!</p>
+    </div>
+
+    <style>
+        .tab {
+            overflow:hidden;
+            border:none;
+            background: inherit;
+        }
+
+        .tab button {
+            background-color: inherit;
+            float:left;
+            border:2px color rgb(95, 29, 157);
+            outline:none;
+            cursor:pointer;
+            padding:14px 16px;
+            transition: 0.2s;
+        }
+
+        .tab button:hover {
+            background-color: #9166a6;
+        }
+
+        .tab button:active {
+            background-color:goldenrod
+        }
+
+        .tabcontent {
+            display:none;
+            padding: 6px 12x;
+            border:4px solid #975db4;
+            border-top:none;
+        }
+    </style>
+
+            <script>
+                function openInfo(event, InfoName) {
+  var i, tabcontent, tablinks;
+
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
   }
-  .side {
-    flex: 12; 
-    padding: 10px;
+
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
   }
-  .side-content-center {
-    display: block; 
-    align-items:baseline;
-  }
-</style>
+
+  document.getElementById(InfoName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+            </script>
+
+</div>
 
 <style>
     a:link {
@@ -28,7 +91,7 @@
         text-decoration: none;
     }
     a:visited {
-        color:black ;
+        color:goldenrod ;
         background: transparent;
         text-decoration: none;
     }
@@ -39,7 +102,7 @@
 </style>
 <div class="container">
   <div class="side">
-      <img  height="100%" src="SeniorPic.jpeg" />
+      <img  width="20%" src="SeniorPic.jpeg" />
   </div>
   <div class="side side-content-center">
     <div>
@@ -67,7 +130,7 @@
         <p>
             <a href="https://fitmentindustries.com">Fitment Industries</a> Wheels and Suspension
         </p>
-        <hr>
+        </div>
     </body>
   
 </html>
