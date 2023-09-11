@@ -10,7 +10,7 @@
         
 
 <div class="centered"><div class="centered_tab">    <div class="tab">
-    <button class="tablink" onclick="openInfo(event, 'Home')">Home</button>
+    <button class="tablink" onclick="openInfo(event, 'Home')"id=defaultOpen>Home</button>
     <button class="tablink" onclick="openInfo(event, 'Background Info')">Background Info</button>
     <button class="tablink" onclick="openInfo(event, 'My Car!')">My Car!</button>
     <button class="tablink" onclick="openInfo(event, 'My Girlfriend!')">My Girlfriend!</button>
@@ -56,6 +56,8 @@
             <li><a href="https://una.edu/index.html"> <h3 style="text-align: center;"> UNA Website</h3></a></li>
             </ul> </div>  
     <img src="SClogo.webp" Alt="Logo" class="center" style="width: 30%;">
+
+    
  
     <style>
         .tab {
@@ -140,6 +142,7 @@
   document.getElementById(InfoName).style.display = "block";
   evt.currentTarget.className += " active";
 }
+document.getElementById("defaultOpen").click();
             </script>
 </div>
 </div>
