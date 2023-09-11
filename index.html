@@ -9,61 +9,70 @@
         <h1 style="text-align: center;">About Me!</h1>
         
 
-<div class="tab">
-    <button class="tablink" onclick="openInfo(event, 'About Me!')">About Me!</button>
+<div class="centered"><div class="centered_tab">    <div class="tab">
+    <button class="tablink" onclick="openInfo(event, 'Home')">Home</button>
+    <button class="tablink" onclick="openInfo(event, 'Background Info')">Background Info</button>
     <button class="tablink" onclick="openInfo(event, 'My Car!')">My Car!</button>
     <button class="tablink" onclick="openInfo(event, 'My Girlfriend!')">My Girlfriend!</button>
-</div>
+   
+</div></div></div>
 
-    <div id="About Me!" class="tabcontent">
-    <h1 style="text-align: center;">About Me!</h1>
-<a href="https://www.instagram.com/daimon_carey/?next=%2F"> <h3 style="text-align: center;"> My Instagram!</h3></a>
-<a href="https://www.tiktok.com/@dc5.daimon"> <h3 style="text-align: center;"> My Tiktok!</h3></a>    
+    <div id="Background Info" class="tabcontent">
+    <h1 style="text-align: center;">Background Info</h1>
 <p><h5 style="text-align: center;">My name is Daimon Carey, and I'm 18 years old!</h5> </p>
     <p style="text-align: center;">There's not too much to me, the most important things to me are my car, my family, and my girlfriend</p></p>
-        <img src="SeniorPic.jpeg" alt="SeniorPic" class="center" style="width: 30%;">
+    <div class="container">
+        <ul class="myUL">
+            <li><a href="https://www.instagram.com/daimon_carey/?next=%2F"> <h3 style="text-align: center;"> My Instagram!</h3></a></li>
+            <li><a href="https://www.tiktok.com/@dc5.daimon"> <h3 style="text-align: center;"> My Tiktok!</h3></a> </li>   
+            </ul> </div>  
+    <img src="SeniorPic.jpeg" alt="SeniorPic" class="center" style="width: 30%;">
 </div>
 
     <div id="My Car!" class="tabcontent">
-   
     <p><h1 style="text-align: center;">This is my car! It's a 2003 Acura RSX Type-S</h1> </p>
     <p><h5 style="text-align: center;">Its kinda boring to most, however its cool to a niche group</h5></p>
-   <div class="container">
+  <div class="container">
     <ul class="myUL">
         <li><a href="www.kseriesparts.com"><h3>Performance Parts</h3></a></li>
         <li><a href="www.dc5association.com"><h3>Accesories Parts for My Car</h3></a></li>
-        <li><a href=""
-        </ul>
-    <img src="Car1.jpeg" Alt="03' RSX" class="center" style="width: 30%;">
-    
+        <li><a href="www.fitmentindustries.com"><h3>Wheels, Tires, and Suspension</h3></a></li>
+    </ul> </div>
+    <img src="Car1.jpeg" Alt="03' RSX" class="center" style="width: 30%;"> 
     </div>
 
     <div id="My Girlfriend!" class="tabcontent">
-    <h1 style="text-align: center;"> Girlfriend!</h1>
+    <h1 style="text-align: center;"> My Girlfriend!</h1>
     <p> <h5 style="text-align: center;">This is my Girlfriend!</h5></p>
-    <p style="text-align: center;">There isn't much I couldn't say about her, she's amazing!</p>
+    <p style="text-align: center;">She's really pretty, and means the world to me! She is an essential part of my life</p>
     <img src="GF2.jpeg" Alt="Pretty Woman" class="center" style="width: 30%;">
-    
-</div> </div>
+    </div>
 
+    <div id="Home" class="tabcontent">
+    <h1 style="text-align: center;">Homepage</h1>
+    <h3 style="text-align: center;">Welcome to My About Me Website!</h3>
+    <div class="container">
+        <ul class="myUL">
+            <li><a href="https://una.edu/index.html"> <h3 style="text-align: center;"> UNA Website</h3></a></li>
+            </ul> </div>  
+    <img src="SClogo.webp" Alt="Logo" class="center" style="width: 30%;">
+ 
     <style>
         .tab {
             overflow:hidden;
             border:none;
             background: inherit;
-            display:block;
-           margin-right:auto;
-           margin-left:auto;
-           width: 30%;
+            display:inline-block;
+            width: 100%;
         }
 
         .tab button {
             background-color: inherit;
-            float:left;
+            float:none;
             border:2px color rgb(95, 29, 157);
             outline:none;
             cursor:pointer;
-            padding:14px 16px;
+            padding:20px 20px;
             transition: 0.4s;
         }
 
@@ -101,6 +110,16 @@
 
         div.container {
             text-align: center;
+        }
+        
+        .centered {
+            text-align: center;
+            width: 100%;
+        }
+
+        .centered_tab {
+            float: none;
+            display: inline-block;
         }
     </style>
 
